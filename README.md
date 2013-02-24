@@ -14,6 +14,14 @@ Execute:
 
 And BOOM, you're on your way!
 
+## What's included?
+
+### Try
+
+You can use the Ruby on Rails like try method to try a method and if it doesn't exist no exception will be raised but instead nil will be returned.
+
+    object_variable.try :testing
+
 ## Contributing
 
 It would be awesome if you contribute!
