@@ -22,6 +22,12 @@ You can use the Ruby on Rails like try method to try a method and if it doesn't 
 
     object_variable.try :testing
 
+### Localize
+
+Localize as fast as possible with this function that you can easily use everywhere. No more description, just pass the key and let iOS do the rest.
+
+    localize "key.in.strings.file"
+
 ## Contributing
 
 It would be awesome if you contribute!
