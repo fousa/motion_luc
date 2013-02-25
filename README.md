@@ -44,6 +44,12 @@ And next you can call these methods below:
     Defaults.instance.password = "je"
     Defaults.instance.password?
 
+### Fit
+
+You can automatically resize a label until it fits the text. Just call fit on the label instance.
+
+    label_variable.fit
+
 ## Contributing
 
 It would be awesome if you contribute!
