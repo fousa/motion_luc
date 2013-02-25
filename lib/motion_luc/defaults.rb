@@ -15,7 +15,7 @@ class Defaults
 
     define_method "#{key}?" do
       value = get_key("#{key}")
-      !value.nil? and !value.empty?
+      !value.nil? and !value.to_s.empty?
     end
   end
 
