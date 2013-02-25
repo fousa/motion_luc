@@ -28,6 +28,22 @@ Localize as fast as possible with this function that you can easily use everywhe
 
     localize "key.in.strings.file"
 
+### Defaults
+
+Just by defining the DEFAULT_KEYS, you get easier access to the NSUserDefaults. Add there to your globals.rb:
+    
+    DEFAULT_KEYS = %w(username password)
+
+And next you can call these methods below:
+
+    Defaults.instance.username
+    Defaults.instance.username = "me"
+    Defaults.instance.username?
+
+    Defaults.instance.password
+    Defaults.instance.password = "je"
+    Defaults.instance.password?
+
 ## Contributing
 
 It would be awesome if you contribute!
