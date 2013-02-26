@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640" />
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Motion luc by fousa</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/fousa/motion_luc">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Motion luc</h1>
+            <h2>Utilities for RubyMotion the way I like to use them.</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/fousa/motion_luc/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/fousa/motion_luc/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>Motion Luc</h1>
+
+<p>Utilities for RubyMotion the way I like to use them.</p>
+
+<h2>Installation</h2>
+
+<p>The installation is simple. Just add this line to you Gemfile:</p>
+
+<pre><code>gem 'motion_luc'
+</code></pre>
+
+<p>Execute:</p>
+
+<pre><code>$ bundle install
+</code></pre>
+
+<p>And BOOM, you're on your way!</p>
+
+<h2>What's included?</h2>
+
+<h3>Try</h3>
+
+<p>You can use the Ruby on Rails like try method to try a method and if it doesn't exist no exception will be raised but instead nil will be returned.</p>
+
+<pre><code>object_variable.try :testing
+</code></pre>
+
+<h3>Localize</h3>
+
+<p>Localize as fast as possible with this function that you can easily use everywhere. No more description, just pass the key and let iOS do the rest.</p>
+
+<pre><code>localize "key.in.strings.file"
+</code></pre>
+
+<h3>Defaults</h3>
+
+<p>Just by defining the DEFAULT_KEYS, you get easier access to the NSUserDefaults. Add there to your globals.rb:</p>
+
+<pre><code>DEFAULT_KEYS = %w(username password)
+</code></pre>
+
+<p>And next you can call these methods below:</p>
+
+<pre><code>Defaults.instance.username
+Defaults.instance.username = "me"
+Defaults.instance.username?
+
+Defaults.instance.password
+Defaults.instance.password = "je"
+Defaults.instance.password?
+</code></pre>
+
+<h3>Fit</h3>
+
+<p>You can automatically resize a label until it fits the text. Just call fit on the label instance.</p>
+
+<pre><code>label_variable.fit
+</code></pre>
+
+<h2>License</h2>
+
+<p>Copyright (c) 2013 Jelle Vandebeeck</p>
+
+<p>MIT License</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/fousa">fousa</a> can be found on <a href="https://github.com/fousa/motion_luc">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
